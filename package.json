@@ -24,7 +24,8 @@
     "javascript"
   ],
   "dependencies": {
-    "express": "^4.13.1"
+    "express": "^4.13.1",
+    "webpack": "^1.10.5"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",

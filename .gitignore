@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 
 /public/bundle.js
+/public/bundle.js.map
 
 ### OSX ###
 .DS_Store

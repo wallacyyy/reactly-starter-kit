@@ -2,8 +2,6 @@ var dotenv = require('dotenv');
 var express = require('express');
 var path = require('path');
 var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
 var app = express();
 
 dotenv.load();
@@ -22,6 +20,9 @@ app.use(express.static(static_path))
   });
 
 if (isDevelopment) {
+  var config = require('./webpack.config');
+  var WebpackDevServer = require('webpack-dev-server');
+
   new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
     hot: true

@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wallacyyy/catgram.git"
+    "url": "git+https://github.com/wallacyyy/webpack-heroku.git"
   },
   "keywords": [
     "react",

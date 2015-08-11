@@ -27,11 +27,11 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.jsx?$/,
-        loader: 'babel?stage=0',
-        include: path.join(__dirname, 'src') },
-      { test: /\.js?$/,
+      { test: /\.jsx$/,
         loader: 'react-hot!babel?stage=0',
+        include: path.join(__dirname, 'src') },
+      { test: /\.js$/,
+        loader: 'babel?stage=0',
         include: path.join(__dirname, 'src') },
       { test: /\.scss?$/,
         loader: 'style!css!sass',

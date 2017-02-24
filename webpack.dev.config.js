@@ -17,17 +17,17 @@ module.exports = {
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ],
 
   module: {
     loaders: [
       { test: /\.js?$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         include: path.join(__dirname, 'src')
       },
       { test: /\.scss?$/,
-        loader: 'style!css!sass',
+        loader: 'style-loader!css-loader!sass-loader',
         include: path.join(__dirname, 'src', 'styles') },
       { test: /\.png$/,
         loader: 'file' },

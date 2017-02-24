@@ -15,4 +15,4 @@ npm run build
 npm start
 ```
 
-Before you deploy, make sure you generated your bundle through `npm run build`.
+<strong>Before you deploy, make sure you generated your bundle through</strong> `npm run build`.

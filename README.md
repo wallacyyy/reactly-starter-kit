@@ -1,8 +1,8 @@
-# React / Webpack / Heroku Starter Kit 
+# React / Webpack / Redux / Heroku Starter Kit 
 
-Heroku deployable app for React/Webpack web apps.
+Originaly adopted from Leonardo Couto: http://ditrospecta.com/javascript/react/es6/webpack/heroku/2015/08/08/deploying-react-webpack-heroku.html 
 
-[Detailed explanation about the setup](http://ditrospecta.com/javascript/react/es6/webpack/heroku/2015/08/08/deploying-react-webpack-heroku.html).
+Heroku deployable app for React/Redux/Webpack web apps.
 
 Running on development mode:
 ```

@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   devtool: 'source-map',
@@ -25,22 +26,30 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
-    })
+    }),
+    new ExtractTextPlugin({ filename: 'style.css', disable: false, allChunks: true }),
   ],
 
   module: {
     rules: [
       { test: /\.js?$/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
         include: path.join(__dirname, 'src')
       },
-      { test: /\.scss?$/,
-        loader: 'style-loader!css-loader!sass-loader',
-        include: path.join(__dirname, 'src', 'styles') },
+      {
+      test: /.scss$/,
+       use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
+          use: [
+              'css-loader',
+              'sass-loader',
+          ]
+        })
+      },
       { test: /\.png$/,
-        loader: 'file' },
+        use: 'file' },
       { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        loader: 'file'}
+        use: 'file'}
     ]
   }
 }

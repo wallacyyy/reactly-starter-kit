@@ -17,4 +17,5 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.listen(port)
+process.noDeprecation = true
 console.log(`Listening at http://localhost:${port}`)

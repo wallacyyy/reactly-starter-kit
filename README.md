@@ -1,4 +1,4 @@
-# Deployable React + Webpack 2
+# Deployable React + Webpack 2 starter kit
 
 Most notable libraries:
 - React 15

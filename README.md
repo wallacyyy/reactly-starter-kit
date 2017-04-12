@@ -1,15 +1,16 @@
-# React / Webpack / Heroku Starter Kit 
+# Deployable React + Webpack 2
 
-Heroku deployable app for React/Webpack web apps.
-
-[Detailed explanation about the setup](http://ditrospecta.com/javascript/react/es6/webpack/heroku/2015/08/08/deploying-react-webpack-heroku.html).
+Most notable libraries:
+- React 15
+- Webpack 2
+- React-hot-loader 3
 
 Running on development mode:
 ```
-npm start
+npm run dev
 ```
 
-Running to production mode:
+Running on production mode:
 ```
 npm run build
 npm start

@@ -1,0 +1,8 @@
+machine:
+    node:
+    version: v6.9.5
+dependencies:
+    override:
+        - npm install 
+        - npm run build
+        - npm start

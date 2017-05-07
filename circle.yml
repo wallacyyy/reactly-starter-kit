@@ -3,6 +3,6 @@ machine:
     version: 6.9.5
 dependencies:
     override:
-        - nvm install 6 && npm install
+        - nvm install 6 && npm install node-gyp@3.6.1 && npm install
         - npm run build
         - npm start

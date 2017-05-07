@@ -4,6 +4,5 @@ machine:
 dependencies:
     override:
         - nvm install 6 && npm install
-        - npm install 
         - npm run build
         - npm start

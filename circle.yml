@@ -1,6 +1,6 @@
 machine:
     node:
-    version: 6.9.5
+    version: 4.7.0
 dependencies:
     override:
         - npm install 

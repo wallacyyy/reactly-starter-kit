@@ -1,8 +1,9 @@
 machine:
     node:
-    version: 4.7.0
+    version: 6.9.5
 dependencies:
     override:
+        - nvm install 6 && npm install
         - npm install 
         - npm run build
         - npm start
